@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "ap-south-1"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
@@ -7,15 +7,15 @@ variable "PATH_TO_PRIVATE_KEY" {
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
+  default = "vinodhkey.pem"
 }
 
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-074251216af698218"
-    us-west-2 = "ami-074251216af698218"
-    eu-west-1 = "ami-074251216af698218"
+    ap-south-1 = "ami-0756a1c858554433e"
+    us-west-2 = "ami-0756a1c858554433e"
+    eu-west-1 = "ami-0756a1c858554433e"
   }
 }
 
